@@ -1,0 +1,12 @@
+<%= form_for :place, method: 'create', url: {action: "create"} do |f| %>
+<%= label(:place, :name) %><br>
+<%= f.text_field :name %><br>
+<%= label(:place, :address) %><br>
+<%= f.text_field :address %><br>
+<%= label(:place, :latitude) %><br>
+<%= f.text_field :latitude %><br>
+<%= label(:place, :longitude) %><br>
+<%= f.text_field :longitude %><br>
+<br>
+<%= f.submit "Save This Place" %>
+<% end %>
